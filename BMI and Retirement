@@ -1,0 +1,9 @@
+echo "# Dataforte-Assignment" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Engr0G/Dataforte-Assignment.git
+git push -u origin main
+
+input
