@@ -1,9 +1,16 @@
-echo "# Dataforte-Assignment" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Engr0G/Dataforte-Assignment.git
-git push -u origin main
+# Calculate for the BMI(Body Mass Index) of an individual
+#You are to receive inputs for weight and height of the individual
+#Weight in Kilograms
+#Height in Metres
+#BMI = Weight/Height**2   (round the BMI figure to 2 decimal places)
+#Using the IF statements, categorise the BMI messages in your print 
+#statements according to the Body Mass Index Chart below saved to msg.
+#~E.g. Your body mass index is 30. You are Overweight!
+#The message below should be displayed after the individual receives their 
+#BMI result to help them understand the BMI chart
+#msg= ‘’’ Body Mass Index Chart: 
+#Between 18 - 25 =  Normal Weight
+#Less than(<) 18 = Underweight
+#Greater than(>) 25 = Overweight OR Obese ‘’’
 
-input
+msg = 'please input your your details in the opions below.'
