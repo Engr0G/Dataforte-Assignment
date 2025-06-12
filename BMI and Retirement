@@ -1,3 +1,6 @@
+#BMI
+
+
 print('Hello, please input your weight(kg) and your height(M) in the option below.')
 weight = int(input('weight: in kg'))
 height = int(input('height: in M'))
@@ -18,3 +21,32 @@ Between 18 - 25 =  Normal Weight
  Greater than(>) 25 = Overweight OR Obese'''
 
 print(msg) 
+
+
+
+
+#Retirement.
+
+print('Hello please input fill the empty option.')
+
+Title = input('Title: ')
+First_name = input('First name: ')
+Last_name = input('Last name: ')
+Year_commenced_civil_service = int(input('Year commenced civil service:  '))
+Date_of_birth = int(input('Date of birth:  '))
+current_year = int(input('currrent year:  '))
+
+current_age = current_year - Date_of_birth
+
+
+Retirement_year = Date_of_birth + 60
+
+Active_year = current_year - Year_commenced_civil_service
+
+year_remaining = retirement_year - current_Year
+
+print(f'''Hello {Title}.{First_name} {Last_name}. 
+You are {current_age} and will be retiring in {Retirement_year} at the year of 60.
+You have spent {Active_year} years of active service. 
+you have {year_remaining} more years of active service.
+thank you for your service.''') 
