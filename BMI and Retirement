@@ -1,16 +1,20 @@
-# Calculate for the BMI(Body Mass Index) of an individual
-#You are to receive inputs for weight and height of the individual
-#Weight in Kilograms
-#Height in Metres
-#BMI = Weight/Height**2   (round the BMI figure to 2 decimal places)
-#Using the IF statements, categorise the BMI messages in your print 
-#statements according to the Body Mass Index Chart below saved to msg.
-#~E.g. Your body mass index is 30. You are Overweight!
-#The message below should be displayed after the individual receives their 
-#BMI result to help them understand the BMI chart
-#msg= ‘’’ Body Mass Index Chart: 
-#Between 18 - 25 =  Normal Weight
-#Less than(<) 18 = Underweight
-#Greater than(>) 25 = Overweight OR Obese ‘’’
+print('Hello, please input your weight(kg) and your height(M) in the option below.')
+weight = int(input('weight: in kg'))
+height = int(input('height: in M'))
 
-msg = 'please input your your details in the opions below.'
+BMI = weight/height**2
+
+if BMI <= 18:
+    print(f'good day your BMI is {BMI} you are underweight.')
+elif BMI >=25:
+    print (f'good day your bmi is {BMI} you are overweight.')
+
+else: 
+    print('go back to instruction and read well.')
+
+msg = ''' The Body mass index chart:
+Between 18 - 25 =  Normal Weight
+ Less than(<) 18 = Underweight
+ Greater than(>) 25 = Overweight OR Obese'''
+
+print(msg) 
