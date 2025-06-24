@@ -3,22 +3,22 @@
 
 print('Please fill in the epmty columns.')
 
-weight = int(input('Weight:  IBS'))
-height = int(input('Height:   KG'))
+weight = float(input('Enter your Weight in KG:  '))
+height = float(input('Enter your Height in Meter: '))
 
-bmi = weight/height
+bmi = round(weight/height**2,2)
 
 if bmi>=25:
-    print('You are over weight.')
+    print(f'your BMI is {bmi}. You are over weight.')
 elif bmi<=18:
-    print('you are under weight.')
+    print(f' your BMI is {bmi}. you are under weight.')
 else:
-    print('You are of normal weight.')
+    print(f' your BMI {ibm}. You are of normal weight.')
 
 msg = ''' The Body mass index chart:
  Between 18 - 25 =  Normal Weight
  Less than(<) 18 = Underweight
- Greater than(>) 25 = Overweight OR Obese.'''
+ Greater than(>) 25 = Overweight OR Obese'''
 print(msg)
 
 
@@ -28,22 +28,23 @@ print(msg)
 
 print ('Insert the required information in the the given input.')
 
-title = input('Title: ')
-first_name = input('First Name: ')
-last_name = input('Last Name: ')
+title = input('Enter your title (mr/mrs/ms): ')
+first_name = input('Enter your first Name: ')
+last_name = input('Enter your last Name: ')
 year_commenced_service = int(input('Year Commenced Service '))
-birth_year = int(input('Birth year: '))
-current_year = int(input('Current Year: '))
+birth_year = int(input('Enter your birth year: '))
+current_year = int(input('Enter your current Year: '))
 
 current_age = current_year - birth_year
-retirement_year = birth_year + 60
+retirement_age = 60
+retirement_year = birth_year + retirement_age
 active_years = current_year - year_commenced_service
 remaining_years =  retirement_year - current_year
 
 
-print(f'''Hello Mr/Mrs {title} {first_name} {last_name}.
+print(f'''Hello {title} {first_name} {last_name}.
 You are {current_age} years old and 
-you will be retiring in the year {retirement_year} at the age of 60.
+you will be retiring in the year {retirement_year} at the age of {retirement_age}.
 You have spent {active_years} of active years in service. 
 You have {remaining_years} years left of active service. 
 Thank you for your service.''')
