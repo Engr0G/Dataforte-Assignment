@@ -18,7 +18,7 @@ else:
 msg = ''' The Body mass index chart:
  Between 18 - 25 =  Normal Weight
  Less than(<) 18 = Underweight
- Greater than(>) 25 = Overweight OR Obese'''
+ Greater than(>) 25 = Overweight OR Obese.'''
 print(msg)
 
 
