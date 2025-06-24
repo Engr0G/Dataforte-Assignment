@@ -1,52 +1,49 @@
 #BMI
 
 
-print('Hello, please input your weight(kg) and your height(M) in the option below.')
-weight = int(input('weight: in kg'))
-height = int(input('height: in M'))
+print('Please fill in the epmty columns.')
 
-BMI = weight/height**2
+weight = int(input('Weight:  IBS'))
+height = int(input('Height:   KG'))
 
-if BMI <= 18:
-    print(f'good day your BMI is {BMI} you are underweight.')
-elif BMI >=25:
-    print (f'good day your bmi is {BMI} you are overweight.')
+bmi = weight/height
 
-else: 
-    print('go back to instruction and read well.')
+if bmi>=25:
+    print('You are over weight.')
+elif bmi<=18:
+    print('you are under weight.')
+else:
+    print('You are of normal weight.')
 
 msg = ''' The Body mass index chart:
-Between 18 - 25 =  Normal Weight
+ Between 18 - 25 =  Normal Weight
  Less than(<) 18 = Underweight
  Greater than(>) 25 = Overweight OR Obese'''
-
-print(msg) 
+print(msg)
 
 
 
 
 #Retirement.
 
-print('Hello please input fill the empty option.')
+print ('Insert the required information in the the given input.')
 
-Title = input('Title: ')
-First_name = input('First name: ')
-Last_name = input('Last name: ')
-Year_commenced_civil_service = int(input('Year commenced civil service:  '))
-Date_of_birth = int(input('Date of birth:  '))
-current_year = int(input('currrent year:  '))
+title = input('Title: ')
+first_name = input('First Name: ')
+last_name = input('Last Name: ')
+year_commenced_service = int(input('Year Commenced Service '))
+birth_year = int(input('Birth year: '))
+current_year = int(input('Current Year: '))
 
-current_age = current_year - Date_of_birth
+current_age = current_year - birth_year
+retirement_year = birth_year + 60
+active_years = current_year - year_commenced_service
+remaining_years =  retirement_year - current_year
 
 
-Retirement_year = Date_of_birth + 60
-
-Active_year = current_year - Year_commenced_civil_service
-
-year_remaining = retirement_year - current_Year
-
-print(f'''Hello {Title}.{First_name} {Last_name}. 
-You are {current_age} and will be retiring in {Retirement_year} at the year of 60.
-You have spent {Active_year} years of active service. 
-you have {year_remaining} more years of active service.
-thank you for your service.''') 
+print(f'''Hello Mr/Mrs {title} {first_name} {last_name}.
+You are {current_age} years old and 
+you will be retiring in the year {retirement_year} at the age of 60.
+You have spent {active_years} of active years in service. 
+You have {remaining_years} years left of active service. 
+Thank you for your service.''')
